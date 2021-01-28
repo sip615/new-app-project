@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
+:root {
+	--primary-green: #b3c100;
+	--primary-gray: #ced2cc;
+	--primary-black: #23282d;
+	--primary-blue: #4cb5f5;
+	--primary-dark: #1f3f49;
+	--primary-red: #d32d41;
+	--secondary-green: #6ab187;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* -------------------------------------NAV--------------------------------------------- */
+
+body {
+	font-family: "Cabin", sans-serif !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-nav > li > a {
+	color: white !important;
+	margin: 0 1rem;
+	border-top: 0.1875rem solid var(--primary-dark);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dark-color {
+	background-color: var(--primary-dark);
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-brand {
+	color: var(--primary-green) !important;
+	margin: 1rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-nav > li > a:hover {
+	border-top: 0.1875rem solid var(--primary-green);
+}
+
+nav a.nav-link {
+	transition: 0.15s ease-in-out;
 }

@@ -1,10 +1,11 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Nav from "../src/components/Nav";
 
 function App() {
   return (
     <div>
-      <h2>New Blank Project</h2>
+      <Nav/>
     </div>
   );
 }
